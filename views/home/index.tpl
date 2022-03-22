@@ -366,11 +366,11 @@
                 addChatWith(msg(data.from, data.msg))
             } else if (data_array.cmd === "enter") {
                 data = data_array.response.data
-                addChatWith(msg("admin", "welcome" + data.from + "join~"))
+                addChatWith(msg("Me", "welcome" + data.from + "join~"))
                 addUserList(data.from)
             } else if (data_array.cmd === "exit") {
                 data = data_array.response.data
-                addChatWith(msg("admin", data.from + "quietly left~"))
+                addChatWith(msg("Me", data.from + "quietly left~"))
                 delUserList(data.from)
             }
 
@@ -407,7 +407,7 @@
 
                 $.ajax({
                     type: "POST",
-                    url: 'http://127.0.0.1:8081/user/sendMessageAll',
+                    url: 'http://127.0.0.1:8080/user/sendMessageAll',
                     data: {
                         appId: "101",
                         userId: person,
@@ -429,7 +429,7 @@
         function getUserList() {
             $.ajax({
                 type: "GET",
-                url: "http://127.0.0.1:8081/user/list",
+                url: "http://127.0.0.1:8080/user/list",
                 dataType: "json",
                 success: function(data) {
                     console.log("user list:" + data.code + "userList:" + data.data.userList);
