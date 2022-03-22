@@ -14,7 +14,7 @@ Sec-WebSocket-Key: I6qjdEaqYljv3+9x+GrhqA==This is the value of base64 encode, w
 # Request Headers
 Connection: Upgrade
 Host: im.91vh.com
-Origin: http://im.91vh.com
+Origin: http://domain
 Pragma: no-cache
 Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
 Sec-WebSocket-Key: I6qjdEaqYljv3+9x+GrhqA==
@@ -442,7 +442,7 @@ http://127.0.0.1:8080/home/index
 
 #### nginx configuration
 - Using the domain name im.91vh.com as an example, reference configuration
-- The first-level directory im.91vh.com/acc is used for webSocket and is forwarded to golang 8089 port with nginx stream forwarding function (nginx 1.3.31 is supported and Tengine configuration is the same).
+- The first-level directory domain/acc is used for webSocket and is forwarded to golang 8089 port with nginx stream forwarding function (nginx 1.3.31 is supported and Tengine configuration is the same).
 - Other directories are for HTTP and forwarded to golang 8080 port for processing
 
 ``` cmd
@@ -461,7 +461,7 @@ upstream  go-acc
 
 server {
     listen       80 ;
-    server_name  im.91vh.com;
+    server_name  domain;
     index index.html index.htm ;
 
 
