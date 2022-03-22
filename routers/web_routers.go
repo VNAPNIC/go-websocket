@@ -8,9 +8,9 @@
 package routers
 
 import (
-	"gowebsocket/controllers/home"
-	"gowebsocket/controllers/systems"
-	"gowebsocket/controllers/user"
+	"go-websocket/controllers/home"
+	"go-websocket/controllers/systems"
+	"go-websocket/controllers/user"
 
 	"github.com/gin-gonic/gin"
 )

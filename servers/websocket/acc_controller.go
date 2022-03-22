@@ -10,9 +10,9 @@ package websocket
 import (
 	"encoding/json"
 	"fmt"
-	"gowebsocket/common"
-	"gowebsocket/lib/cache"
-	"gowebsocket/models"
+	"go-websocket/common"
+	"go-websocket/lib/cache"
+	"go-websocket/models"
 	"time"
 
 	"github.com/go-redis/redis"

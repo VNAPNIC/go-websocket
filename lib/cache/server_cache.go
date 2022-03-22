@@ -10,8 +10,8 @@ package cache
 import (
 	"encoding/json"
 	"fmt"
-	"gowebsocket/lib/redislib"
-	"gowebsocket/models"
+	"go-websocket/lib/redislib"
+	"go-websocket/models"
 	"strconv"
 )
 

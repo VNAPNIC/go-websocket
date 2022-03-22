@@ -10,9 +10,9 @@ package websocket
 import (
 	"errors"
 	"fmt"
-	"gowebsocket/lib/cache"
-	"gowebsocket/models"
-	"gowebsocket/servers/grpcclient"
+	"go-websocket/lib/cache"
+	"go-websocket/models"
+	"go-websocket/servers/grpcclient"
 	"time"
 
 	"github.com/go-redis/redis"

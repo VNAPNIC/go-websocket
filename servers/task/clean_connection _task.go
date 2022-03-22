@@ -9,7 +9,7 @@ package task
 
 import (
 	"fmt"
-	"gowebsocket/servers/websocket"
+	"go-websocket/servers/websocket"
 	"runtime/debug"
 	"time"
 )

@@ -9,7 +9,7 @@ package cache
 
 import (
 	"fmt"
-	"gowebsocket/lib/redislib"
+	"go-websocket/lib/redislib"
 )
 
 const (

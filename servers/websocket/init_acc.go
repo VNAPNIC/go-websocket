@@ -12,8 +12,8 @@ import (
 	"net/http"
 	"time"
 
-	"gowebsocket/helper"
-	"gowebsocket/models"
+	"go-websocket/helper"
+	"go-websocket/models"
 
 	"github.com/gorilla/websocket"
 	"github.com/spf13/viper"

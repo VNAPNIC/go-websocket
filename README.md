@@ -362,7 +362,7 @@ ws.send('{"seq":"2324","cmd":"heartbeat","data":{}}');
 ws.close();
 ```
 
-## goWebSocket Project
+## go-websocket Project
 
 #### Project Description
 

@@ -10,10 +10,10 @@ package grpcserver
 import (
 	"context"
 	"fmt"
-	"gowebsocket/common"
-	"gowebsocket/models"
-	"gowebsocket/protobuf"
-	"gowebsocket/servers/websocket"
+	"go-websocket/common"
+	"go-websocket/models"
+	"go-websocket/protobuf"
+	"go-websocket/servers/websocket"
 	"log"
 	"net"
 

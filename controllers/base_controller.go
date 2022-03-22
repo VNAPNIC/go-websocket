@@ -8,7 +8,7 @@
 package controllers
 
 import (
-	"gowebsocket/common"
+	"go-websocket/common"
 	"net/http"
 
 	"github.com/gin-gonic/gin"

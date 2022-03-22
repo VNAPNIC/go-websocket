@@ -9,8 +9,8 @@ package task
 
 import (
 	"fmt"
-	"gowebsocket/lib/cache"
-	"gowebsocket/servers/websocket"
+	"go-websocket/lib/cache"
+	"go-websocket/servers/websocket"
 	"runtime/debug"
 	"time"
 )

@@ -7,7 +7,7 @@
 
 package models
 
-import "gowebsocket/common"
+import "go-websocket/common"
 
 const (
 	MessageTypeText = "text"

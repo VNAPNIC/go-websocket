@@ -9,11 +9,11 @@ package main
 
 import (
 	"fmt"
-	"gowebsocket/lib/redislib"
-	"gowebsocket/routers"
-	"gowebsocket/servers/grpcserver"
-	"gowebsocket/servers/task"
-	"gowebsocket/servers/websocket"
+	"go-websocket/lib/redislib"
+	"go-websocket/routers"
+	"go-websocket/servers/grpcserver"
+	"go-websocket/servers/task"
+	"go-websocket/servers/websocket"
 	"io"
 	"net/http"
 	"os"

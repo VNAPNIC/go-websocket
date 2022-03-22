@@ -10,8 +10,8 @@ package websocket
 import (
 	"encoding/json"
 	"fmt"
-	"gowebsocket/common"
-	"gowebsocket/models"
+	"go-websocket/common"
+	"go-websocket/models"
 	"sync"
 )
 

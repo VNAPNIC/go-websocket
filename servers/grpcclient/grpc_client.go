@@ -11,9 +11,9 @@ import (
 	"context"
 	"errors"
 	"fmt"
-	"gowebsocket/common"
-	"gowebsocket/models"
-	"gowebsocket/protobuf"
+	"go-websocket/common"
+	"go-websocket/models"
+	"go-websocket/protobuf"
 	"time"
 
 	"google.golang.org/grpc"

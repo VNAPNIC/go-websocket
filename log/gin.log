@@ -5,31 +5,18 @@
  - using code:	gin.SetMode(gin.ReleaseMode)
 
 [GIN-debug] Loaded HTML Templates (3): 
-	- 
 	- index.html
 	- index.tpl
+	- 
 
-[GIN-debug] GET    /user/list                --> gowebsocket/controllers/user.List (3 handlers)
-[GIN-debug] GET    /user/online              --> gowebsocket/controllers/user.Online (3 handlers)
-[GIN-debug] POST   /user/sendMessage         --> gowebsocket/controllers/user.SendMessage (3 handlers)
-[GIN-debug] POST   /user/sendMessageAll      --> gowebsocket/controllers/user.SendMessageAll (3 handlers)
-[GIN-debug] GET    /system/state             --> gowebsocket/controllers/systems.Status (3 handlers)
-[GIN-debug] GET    /home/index               --> gowebsocket/controllers/home.Index (3 handlers)
-[GIN] 2022/03/22 - 15:28:02 | 200 |     638.554µs |       127.0.0.1 | GET      "/home/index"
-[GIN] 2022/03/22 - 15:28:02 | 200 |    1.278882ms |       127.0.0.1 | GET      "/user/list"
-[[GIN] 2022/03/22 - 15:29:20 | 200 |    1.308052ms |       127.0.0.1 | POST     "/user/sendMessageAll"[GIN] 2022/03/22 - 15:32:01 | 200 |    1.153861ms |       127.0.0.1 | POST     "/user/sendMessageAll"
-[GIN] 2022/03/22 - 15:32:55 | 200 |     940.743µs |       127.0.0.1 | GET      "/user/list"
-[GIN] 2022/03/22 - 15:33:03 | 200 |   32.885696ms |       127.0.0.1 | POST     "/user/sendMessageAll"
-[GIN] 2022/03/22 - 15:33:29 | 200 |     879.676µs |       127.0.0.1 | GET      "/user/list"
-[GIN] 2022/03/22 - 15:33:54 | 200 |    1.010836ms |       127.0.0.1 | POST     "/user/sendMessageAll"
-[GIN] 2022/03/22 - 15:34:00 | 200 |    1.057169ms |       127.0.0.1 | POST     "/user/sendMessageAll"
-[G[GIN] 2022/03/22 - 15:40:28 | 200 |     737.355µs |       127.0.0.1 | GET      "/home/index"
-[GIN] 2022/03/22 - 15:40:29 | 200 |    1.067916ms |       127.0.0.1 | GET      "/user/list"
-[GIN] 2022/03/22 - 15:40:39 | 200 |     452.468µs |       127.0.0.1 | GET      "/home/index"
-[GIN] 2022/03/22 - 15:40:39 | 200 |    1.094826ms |       127.0.0.1 | GET      "/user/list"
-[GIN] 2022/03/22 - 15:40:40 | 200 |     457.574µs |       127.0.0.1 | GET      "/home/index"
-[GIN] 2022/03/22 - 15:40:41 | 200 |    1.015775ms |       127.0.0.1 | GET      "/user/list"
-[GIN] 2022/03/22 - 15:40:41 | 200 |     486.583µs |       127.0.0.1 | GET      "/home/index"
-[GIN] 2022/03/22 - 15:40:41 | 200 |     777.718µs |       127.0.0.1 | GET      "/user/list"
-       127.0.0.1 | POST     "/user/sendMessageAll"
-[GIN] 2022/03/22 - 15:40:35 | 200 |    1.442001ms |       127.0.0.1 | POST     "/user/sendMessageAll"
+[GIN-debug] GET    /user/list                --> go-websocket/controllers/user.List (3 handlers)
+[GIN-debug] GET    /user/online              --> go-websocket/controllers/user.Online (3 handlers)
+[GIN-debug] POST   /user/sendMessage         --> go-websocket/controllers/user.SendMessage (3 handlers)
+[GIN-debug] POST   /user/sendMessageAll      --> go-websocket/controllers/user.SendMessageAll (3 handlers)
+[GIN-debug] GET    /system/state             --> go-websocket/controllers/systems.Status (3 handlers)
+[GIN-debug] GET    /home/index               --> go-websocket/controllers/home.Index (3 handlers)
+[GIN] 2022/03/22 - 17:30:35 | 200 |     667.905µs |       127.0.0.1 | GET      "/home/index"
+[GIN] 2022/03/22 - 17:30:35 | 200 |      338.14µs |       127.0.0.1 | GET      "/user/list"
+[GIN] 2022/03/22 - 17:30:37 | 200 |    1.897278ms |       127.0.0.1 | POST     "/user/sendMessageAll"
+[GIN] 2022/03/22 - 17:30:38 | 200 |     946.727µs |       127.0.0.1 | POST     "/user/sendMessageAll"
+[GIN] 2022/03/22 - 17:30:39 | 200 |     524.042µs |       127.0.0.1 | POST     "/user/sendMessageAll"

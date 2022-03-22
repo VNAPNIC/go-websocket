@@ -9,7 +9,7 @@ package home
 
 import (
 	"fmt"
-	"gowebsocket/servers/websocket"
+	"go-websocket/servers/websocket"
 	"net/http"
 	"strconv"
 

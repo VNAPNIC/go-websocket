@@ -8,7 +8,7 @@
 package routers
 
 import (
-	"gowebsocket/servers/websocket"
+	"go-websocket/servers/websocket"
 )
 
 // Websocket routing

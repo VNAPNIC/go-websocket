@@ -9,9 +9,9 @@ package websocket
 
 import (
 	"fmt"
-	"gowebsocket/helper"
-	"gowebsocket/lib/cache"
-	"gowebsocket/models"
+	"go-websocket/helper"
+	"go-websocket/lib/cache"
+	"go-websocket/models"
 	"sync"
 	"time"
 )

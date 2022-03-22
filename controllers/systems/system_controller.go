@@ -9,9 +9,9 @@ package systems
 
 import (
 	"fmt"
-	"gowebsocket/common"
-	"gowebsocket/controllers"
-	"gowebsocket/servers/websocket"
+	"go-websocket/common"
+	"go-websocket/controllers"
+	"go-websocket/servers/websocket"
 	"runtime"
 
 	"github.com/gin-gonic/gin"

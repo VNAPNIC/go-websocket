@@ -9,11 +9,11 @@ package user
 
 import (
 	"fmt"
-	"gowebsocket/common"
-	"gowebsocket/controllers"
-	"gowebsocket/lib/cache"
-	"gowebsocket/models"
-	"gowebsocket/servers/websocket"
+	"go-websocket/common"
+	"go-websocket/controllers"
+	"go-websocket/lib/cache"
+	"go-websocket/models"
+	"go-websocket/servers/websocket"
 	"strconv"
 
 	"github.com/gin-gonic/gin"
