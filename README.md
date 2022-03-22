@@ -1,4 +1,4 @@
-## 1 Web Socket Establishment Process
+## Web Socket Establishment Process
 Client initiates the request for upgrade protocol first
 Client initiates a request for upgrade protocol, using standard HTTP message format, and adds header information to the message.
 
