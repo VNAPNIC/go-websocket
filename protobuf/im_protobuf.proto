@@ -1,0 +1,80 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "io.grpc.examples.protobuf";
+option java_outer_classname = "ProtobufProto";
+
+
+package protobuf;
+
+// The AccServer service definition.
+service AccServer {
+    // Check if user is online
+    rpc QueryUsersOnline (QueryUsersOnlineReq) returns (QueryUsersOnlineRsp) {
+    }
+    // send messages
+    rpc SendMsg (SendMsgReq) returns (SendMsgRsp) {
+    }
+    // Send a message to all users in this machine's room
+    rpc SendMsgAll (SendMsgAllReq) returns (SendMsgAllRsp) {
+    }
+    // get user list
+    rpc GetUserList (GetUserListReq) returns (GetUserListRsp) {
+    }
+}
+
+// Check if user is online
+message QueryUsersOnlineReq {
+    uint32 appId = 1; // AppID
+    string userId = 2; // User ID
+}
+
+message QueryUsersOnlineRsp {
+    uint32 retCode = 1;
+    string errMsg = 2;
+    bool online = 3;
+}
+
+// send messages
+message SendMsgReq {
+    string seq = 1; // serial number
+    uint32 appId = 2; // appId/roomId
+    string userId = 3; // User ID
+    string cms = 4; // cms action: msg/enter/exit
+    string type = 5; // type message type, default is text
+    string msg = 6; // msg
+    bool isLocal = 7; // Whether to query the local acc internal call is: true (the local query will end if it is not)
+}
+
+message SendMsgRsp {
+    uint32 retCode = 1;
+    string errMsg = 2;
+    string sendMsgId = 3;
+}
+
+// Send a message to all users in this machine's room
+message SendMsgAllReq {
+    string seq = 1; // serial number
+    uint32 appId = 2; // appId/roomId
+    string userId = 3; // User ID
+    string cms = 4; // cms action: msg/enter/exit
+    string type = 5; // type message type, default is text
+    string msg = 6; // msg
+}
+
+message SendMsgAllRsp {
+    uint32 retCode = 1;
+    string errMsg = 2;
+    string sendMsgId = 3;
+}
+
+// get user list
+message GetUserListReq {
+    uint32 appId = 1;
+}
+
+message GetUserListRsp {
+    uint32 retCode = 1;
+    string errMsg = 2;
+    repeated string userId = 3;
+}

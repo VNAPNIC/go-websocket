@@ -1,0 +1,23 @@
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] Loaded HTML Templates (3): 
+	- 
+	- index.html
+	- index.tpl
+
+[GIN-debug] GET    /user/list                --> gowebsocket/controllers/user.List (3 handlers)
+[GIN-debug] GET    /user/online              --> gowebsocket/controllers/user.Online (3 handlers)
+[GIN-debug] POST   /user/sendMessage         --> gowebsocket/controllers/user.SendMessage (3 handlers)
+[GIN-debug] POST   /user/sendMessageAll      --> gowebsocket/controllers/user.SendMessageAll (3 handlers)
+[GIN-debug] GET    /system/state             --> gowebsocket/controllers/systems.Status (3 handlers)
+[GIN-debug] GET    /home/index               --> gowebsocket/controllers/home.Index (3 handlers)
+[GIN] 2022/03/22 - 12:01:29 | 200 |    1.014625ms |       127.0.0.1 | GET      "/home/index"
+[GIN] 2022/03/22 - 12:01:30 | 200 |    1.419125ms |       127.0.0.1 | GET      "/user/list"
+[GIN] 2022/03/22 - 12:01:52 | 200 |    1.176637ms |       127.0.0.1 | POST     "/user/sendMessageAll"
+[GIN] 2022/03/22 - 12:02:41 | 200 |    1.125352ms |       127.0.0.1 | POST     "/user/sendMessageAll"
+"
+[GIN] 2022/03/22 - 12:02:38 | 200 |    1.648899ms |       127.0.0.1 | POST     "/user/sendMessageAll"
